@@ -1,0 +1,19 @@
+# Pickle Files Download Links
+
+Due to file size limitations on Git, the pickle files for this project are hosted on Google Drive.
+Please download the required files from the links below:
+
+## Required Files:
+1. data.pickle
+   Link: https://drive.google.com/drive/folders/1fkrrpADLRFnHhykCKJEK3n_T9naU-Ry-?usp=sharing
+   
+
+## Download Instructions:
+
+1. Click on each link above
+2. Click the "Download" button in Google Drive
+3. Save the files to your project directory
+
+## File Placement:
+
+Place the downloaded pickle files in the same directory as your Python scripts, or update the file paths in your code accordingly.

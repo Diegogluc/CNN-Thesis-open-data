@@ -1,0 +1,23 @@
+# CNN Architecture Comparison - Requirements
+# Dependencies for 1D and 2D CNN implementations and comparative analysis
+
+# Core ML/DL Framework
+tensorflow>=2.10.1
+
+# Hyperparameter optimization
+keras-tuner>=1.4.7
+
+# Data processing and numerical computing
+numpy>=1.26.4
+pandas>=2.2.2
+
+# Machine learning utilities
+scikit-learn>=1.5.1
+
+# Visualization
+matplotlib>=3.9.2
+
+# Additional utilities (optional but recommended)
+seaborn>=0.13.0          # Enhanced plotting for results visualization
+plotly>=5.17.0           # Interactive plots for model comparison
+scipy>=1.11.0            # Scientific computing utilities
