@@ -150,7 +150,7 @@ Rezende     - Accuracy:  85.78 (+- 2.67) - Loss: 0.3889
 Park        - Accuracy:  89.23 (+- 1.98) - Loss: 0.2967
 ```
 
-## 🛠️ Development
+## Development
 
 ### Adding New Models
 1. Implement the model function in `models/baseline_models.py`
