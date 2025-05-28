@@ -1,0 +1,53 @@
+# Pickle files
+*.pickle
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (add more extensions as needed)
+*.csv
+*.json
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Model files
+*.pth
+*.pt
+*.h5
+*.model
+*.weights
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Large data directories (customize as needed)
+data/
+models/
+datasets/ 

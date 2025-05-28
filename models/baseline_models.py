@@ -5,10 +5,10 @@
 CNN Architecture Implementations from Literature Review
 
 This module implements CNN architectures from:
-- Liu et al. (2020): Compact CNN for 1D signal classification
-- Rezende et al. (2020): Deep learning approach with dropout regularization  
-- Azimi et al. (2020): Multi-block CNN with batch normalization
-- Park et al. (2020): 2D CNN for spectral data classification
+- Liu et al. (2020): Compact 1D CNN with tanh activation and minimal layers.
+- Rezende et al. (2020): 1D CNN with dropout regularization and dense layers.  
+- Azimi et al. (2020): 1D Multi-block CNN with batch normalization and LeakyReLU activation.
+- Park et al. (2020): 2D CNN for spectral data classification with multiple convolutional blocks.
 
 Used for comparative analysis in 1D and 2D signal classification tasks.
 """
@@ -24,7 +24,7 @@ def create_azimi_model(input_shape, num_classes=9):
     """
     Create Azimi et al. (2020) CNN architecture.
     
-    Multi-block CNN with batch normalization and LeakyReLU activation.
+    1D Multi-block CNN with batch normalization and LeakyReLU activation.
     
     Args:
         input_shape: Shape of input data (sequence_length, features)
@@ -125,10 +125,8 @@ def create_park_model(input_shape, num_classes=9):
     model.add(Activation('softmax'))
     
     # Compile model
-    # Note: Original had learning_rate=2.380E+16 which seems too high
-    # Using a more reasonable learning rate
     model.compile(loss='categorical_crossentropy',
-                  optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
+                  optimizer=tf.keras.optimizers.Adam(learning_rate=2.380E-3),
                   metrics=['accuracy', 'Precision'])
     
     return model
@@ -138,7 +136,7 @@ def create_liu_model(input_shape, num_classes=9):
     """
     Create Liu et al. (2020) CNN architecture.
     
-    Compact CNN with tanh activation and minimal layers.
+    Compact 1D CNN with tanh activation and minimal layers.
     
     Args:
         input_shape: Shape of input data (sequence_length, features)
@@ -177,7 +175,7 @@ def create_rezende_model(input_shape, num_classes=9):
     """
     Create Rezende et al. (2020) CNN architecture.
     
-    CNN with dropout regularization and dense layers.
+    1D CNN with dropout regularization and dense layers.
     
     Args:
         input_shape: Shape of input data (sequence_length, features)

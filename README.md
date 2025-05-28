@@ -1,19 +1,19 @@
 # CNN Classification Methods Comparison
 
-A comprehensive comparative study of CNN architectures for 1D and 2D signal classification, implementing and evaluating methods from recent literature on the IASC benchmark dataset.
+A comprehensive comparative study of CNN architectures for 1D and 2D acceleration signal classification, implementing and evaluating methods from recent literature on the IASC-ASCE SHM experiment benchmark dataset.
 
-## 🎯 Overview
+## Overview
 
-This project implements and compares several state-of-the-art CNN architectures for signal classification tasks. The study focuses on systematic evaluation using k-fold cross-validation to provide robust performance comparisons across different architectural approaches.
+This project implements and compares four state-of-the-art CNN architectures for acceleration signal classification tasks. The study focuses on systematic evaluation using k-fold cross-validation to provide robust performance comparisons across different architectural approaches.
 
-## 🏗️ Implemented Methods
+## Implemented Methods
 
-- **Liu et al. (2020)**: Compact CNN architecture with tanh activation and minimal layers for efficient 1D signal processing
-- **Rezende et al. (2020)**: Deep learning approach with dropout regularization and dense connectivity for robust classification
-- **Azimi et al. (2020)**: Multi-block CNN with batch normalization and LeakyReLU activation for enhanced feature extraction
-- **Park et al. (2020)**: 2D CNN architecture for spectral data classification using time-frequency representations
+- **Liu et al. (2020)**: Compact 1D CNN with tanh activation and minimal layers
+- **Rezende et al. (2020)**: 1D CNN with dropout regularization and dense layers
+- **Azimi et al. (2020)**: 1D Multi-block CNN with batch normalization and LeakyReLU activation
+- **Park et al. (2020)**: 2D CNN for spectral data classification with multiple convolutional blocks
 
-## 📊 Dataset
+## Dataset
 
 - **IASC Dataset**: Public benchmark dataset for structural health monitoring and vibration analysis
 - **Data Types**: Both 1D time-series and 2D spectral representations
@@ -21,7 +21,7 @@ This project implements and compares several state-of-the-art CNN architectures 
 - **Preprocessing**: Standardized preprocessing pipeline with configurable channel selection
 - Preprocessed data available in `data/iasc_dataset/processed/`
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -40,9 +40,12 @@ source cnn_env/bin/activate  # On Windows: cnn_env\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Dataset files
+Download required data files from `pickle_files_download.txt` before running the project.
 ```
 
-## 💡 Usage
+## Usage
 
 ### Quick Start
 ```bash
@@ -83,7 +86,7 @@ from models.model_utils import evaluate_model_kfold
 results = evaluate_model_kfold(lambda: create_liu_model(X.shape[1:]), X, y)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cnn-classification-comparison/
@@ -113,7 +116,7 @@ cnn-classification-comparison/
     └── *.txt                  # Cross-validation results
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### Cross-Validation Strategy
 - **K-Fold Cross-Validation**: 5-fold stratified cross-validation for robust performance estimation
@@ -131,7 +134,7 @@ cnn-classification-comparison/
 - **Statistical Analysis**: Comprehensive reporting of per-fold results
 - **Model Comparison**: Side-by-side performance comparison across architectures
 
-## 📈 Results
+## Results
 
 Results are automatically saved to the `results/` directory after each evaluation:
 
@@ -161,18 +164,18 @@ python hyperparameter_tuning/iasc_tuning.py    # For 1D models
 python hyperparameter_tuning/park_tuning.py    # For Park model
 ```
 
-## 📚 References
+## References
 
-- Liu, X., et al. (2020). "Compact CNN for 1D signal classification." *Journal Name*, Volume(Issue), pages.
-- Rezende, A., et al. (2020). "Deep learning approach with dropout regularization." *Journal Name*, Volume(Issue), pages.
-- Azimi, M., et al. (2020). "Multi-block CNN with batch normalization." *Journal Name*, Volume(Issue), pages.
-- Park, S., et al. (2020). "2D CNN architecture for spectral data classification." *Journal Name*, Volume(Issue), pages.
+- LIU, T. et al. A data-driven damage identification framework based on transmissibility function datasets and one-dimensional convolutional neural networks: verification on a structural health monitoring benchmark structure. Sensors, v. 20, p. 1059, 2020.
+- REZENDE, S. W. F. et al. Convolutional neural network and impedance-based SHM applied to damage detection. Engineering Research Express, v. 2, p. 035031, 2020.
+- AZIMI, M.; PEKCAN, G. Structural health monitoring using extremely compressed data through deep learning. Computer-Aided Civil and Infrastructure Engineering,v. 35, p. 597–614, 2020.
+- PARK, H. S. et al. Convolutional neural network-based safety evaluation method for structures with dynamic responses. Expert Systems with Applications, v. 158, p. 113634, 2020.
 
-## 🤝 Contributing
+## Contributing
 
-This project is part of ongoing research. For questions or collaboration opportunities, please open an issue or contact the maintainer.
+This project is part of a research on .
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -185,7 +188,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Matplotlib**: ≥3.9.2
 - **Pandas**: ≥2.2.2
 
-## 📞 Support
+## Support
 
 If you encounter any issues:
 1. Check the [Issues](../../issues) page for common problems
