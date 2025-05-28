@@ -179,7 +179,7 @@ This project is part of a research on .
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔧 Technical Requirements
+## Technical Requirements
 
 - **TensorFlow**: ≥2.10.1
 - **Keras Tuner**: ≥1.4.7  
