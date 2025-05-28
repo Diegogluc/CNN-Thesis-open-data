@@ -163,10 +163,10 @@ python hyperparameter_tuning/park_tuning.py    # For Park model
 
 ## 📚 References
 
-- Liu, X., et al. (2020). "Compact CNN for 1D signal classification." *Journal Name*, Volume(Issue), pages.
-- Rezende, A., et al. (2020). "Deep learning approach with dropout regularization." *Journal Name*, Volume(Issue), pages.
-- Azimi, M., et al. (2020). "Multi-block CNN with batch normalization." *Journal Name*, Volume(Issue), pages.
-- Park, S., et al. (2020). "2D CNN architecture for spectral data classification." *Journal Name*, Volume(Issue), pages.
+- LIU, T. et al. A data-driven damage identification framework based on transmissibility function datasets and one-dimensional convolutional neural networks: verification on a structural health monitoring benchmark structure. Sensors, v. 20, p. 1059, 2020.
+- REZENDE, S. W. F. et al. Convolutional neural network and impedance-based SHM applied to damage detection. Engineering Research Express, v. 2, p. 035031, 2020.
+- AZIMI, M.; PEKCAN, G. Structural health monitoring using extremely compressed data through deep learning. Computer-Aided Civil and Infrastructure Engineering,v. 35, p. 597–614, 2020.
+- PARK, H. S. et al. Convolutional neural network-based safety evaluation method for structures with dynamic responses. Expert Systems with Applications, v. 158, p. 113634, 2020.
 
 ## 🤝 Contributing
 
